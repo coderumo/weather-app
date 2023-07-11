@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:weather_app/page/home_page.dart';
+import 'package:weather_app/page/first_page.dart';
 import 'package:weather_app/provider/dark_theme_provider.dart';
 import 'package:weather_app/services/dark_theme_pref.dart';
 
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
           title: 'Flutter Demo',
           debugShowCheckedModeBanner: false,
           theme: Style.themeData(themeProvider.getDarkTheme, context),
-          home: const HomePage(),
+          home: const FirstPage(),
         );
       }),
     );
